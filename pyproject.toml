@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "flox-exec"
+version = "0.1.0"
+description = ""
+authors = ["Michal Przytulski <michal@przytulski.pl>"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+flox-core = "^0.1.0"
+plumbum = "^1.6"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.plugins."flox.plugin"]
+exec = "flox_exec:plugin"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
